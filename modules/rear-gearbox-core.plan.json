@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "author": "Grok from official 42114 PDF (bag 1, steps 1–13 approx.)",
+  "license": "Fan reconstruction; LEGO is a trademark of the LEGO Group",
+  "sections": [
+    {
+      "name": "rear-gearbox-core.ldr",
+      "description": "Bag 1 core: stacked 5x7 Technic frames with corner pins and side 11-hole beams. Matches PDF pages 6–10 early structure before gear stacks.",
+      "anchors": {
+        "motor-bay-front": {
+          "at": [0, -40, 0],
+          "matrix": [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+        },
+        "chassis-aft": {
+          "at": [0, 0, 60],
+          "matrix": [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+        }
+      },
+      "steps": [
+        [
+          {
+            "id": "frame-lower",
+            "ref": "64179.dat",
+            "colour": 72,
+            "at": [0, 0, 0],
+            "purpose": "PDF step 1: lower 5x7 open-center Technic frame"
+          },
+          {
+            "id": "pin-lower-a",
+            "ref": "2780.dat",
+            "colour": 0,
+            "at": [-40, 10, -20],
+            "matrix": [[0, 0, 1], [0, 1, 0], [-1, 0, 0]],
+            "purpose": "PDF step 1: friction pin into frame hole"
+          },
+          {
+            "id": "pin-lower-b",
+            "ref": "2780.dat",
+            "colour": 0,
+            "at": [40, 10, -20],
+            "matrix": [[0, 0, 1], [0, 1, 0], [-1, 0, 0]],
+            "purpose": "PDF step 1: second friction pin"
+          }
+        ],
+        [
+          {
+            "id": "pin-corner-1",
+            "ref": "6558.dat",
+            "colour": 1,
+            "at": [-40, -20, -40],
+            "matrix": [[0, 1, 0], [-1, 0, 0], [0, 0, 1]],
+            "purpose": "PDF step 2: long blue pin upright at corner (4x pattern)"
+          },
+          {
+            "id": "pin-corner-2",
+            "ref": "6558.dat",
+            "colour": 1,
+            "at": [40, -20, -40],
+            "matrix": [[0, 1, 0], [-1, 0, 0], [0, 0, 1]]
+          },
+          {
+            "id": "pin-corner-3",
+            "ref": "6558.dat",
+            "colour": 1,
+            "at": [-40, -20, 40],
+            "matrix": [[0, 1, 0], [-1, 0, 0], [0, 0, 1]]
+          },
+          {
+            "id": "pin-corner-4",
+            "ref": "6558.dat",
+            "colour": 1,
+            "at": [40, -20, 40],
+            "matrix": [[0, 1, 0], [-1, 0, 0], [0, 0, 1]]
+          }
+        ],
+        [
+          {
+            "id": "frame-upper",
+            "ref": "64179.dat",
+            "colour": 72,
+            "at": [0, -40, 0],
+            "purpose": "PDF step 3: second 5x7 frame stacked on long pins"
+          }
+        ],
+        [
+          {
+            "id": "pin-mid-1",
+            "ref": "2780.dat",
+            "colour": 0,
+            "at": [-20, -30, 0],
+            "matrix": [[0, 0, 1], [0, 1, 0], [-1, 0, 0]],
+            "purpose": "PDF step 4: additional friction pins through stacked frames"
+          },
+          {
+            "id": "pin-mid-2",
+            "ref": "2780.dat",
+            "colour": 0,
+            "at": [20, -30, 0],
+            "matrix": [[0, 0, 1], [0, 1, 0], [-1, 0, 0]]
+          },
+          {
+            "id": "pin-mid-3",
+            "ref": "2780.dat",
+            "colour": 0,
+            "at": [0, -30, -20],
+            "matrix": [[0, 0, 1], [0, 1, 0], [-1, 0, 0]]
+          },
+          {
+            "id": "pin-mid-4",
+            "ref": "2780.dat",
+            "colour": 0,
+            "at": [0, -30, 20],
+            "matrix": [[0, 0, 1], [0, 1, 0], [-1, 0, 0]]
+          },
+          {
+            "id": "pin-mid-5",
+            "ref": "2780.dat",
+            "colour": 0,
+            "at": [-40, -30, 0],
+            "matrix": [[0, 0, 1], [0, 1, 0], [-1, 0, 0]]
+          },
+          {
+            "id": "pin-mid-6",
+            "ref": "2780.dat",
+            "colour": 0,
+            "at": [40, -30, 0],
+            "matrix": [[0, 0, 1], [0, 1, 0], [-1, 0, 0]]
+          }
+        ],
+        [
+          {
+            "id": "beam-11-left",
+            "ref": "32525.dat",
+            "colour": 14,
+            "at": [-60, -20, 0],
+            "matrix": [[0, 0, 1], [0, 1, 0], [-1, 0, 0]],
+            "purpose": "PDF step 5: yellow Technic beam 1x11 along side (hole count 11)"
+          },
+          {
+            "id": "beam-11-right",
+            "ref": "32525.dat",
+            "colour": 14,
+            "at": [60, -20, 0],
+            "matrix": [[0, 0, 1], [0, 1, 0], [-1, 0, 0]],
+            "purpose": "PDF step 5: matching 11-hole beam opposite side"
+          }
+        ],
+        [
+          {
+            "id": "frame-side-a",
+            "ref": "64179.dat",
+            "colour": 71,
+            "at": [0, -20, -50],
+            "matrix": [[1, 0, 0], [0, 0, -1], [0, 1, 0]],
+            "purpose": "PDF steps 6–7 area: side frame orientation for gearbox pocket"
+          }
+        ],
+        [
+          {
+            "id": "liftarm-2x4-yellow",
+            "ref": "60484.dat",
+            "colour": 14,
+            "at": [0, -20, -30],
+            "purpose": "PDF step 7: yellow 2x4 L-shape / connector plate inside frame"
+          },
+          {
+            "id": "axle-pin-blue-1",
+            "ref": "43093.dat",
+            "colour": 1,
+            "at": [-20, -20, -30],
+            "matrix": [[0, 0, 1], [0, 1, 0], [-1, 0, 0]]
+          },
+          {
+            "id": "axle-pin-blue-2",
+            "ref": "43093.dat",
+            "colour": 1,
+            "at": [20, -20, -30],
+            "matrix": [[0, 0, 1], [0, 1, 0], [-1, 0, 0]]
+          }
+        ],
+        [
+          {
+            "id": "pin-red-axle-1",
+            "ref": "32054.dat",
+            "colour": 4,
+            "at": [30, -20, -40],
+            "purpose": "PDF step 8: red axle-pin + bush style connectors on side"
+          },
+          {
+            "id": "pin-red-axle-2",
+            "ref": "32054.dat",
+            "colour": 4,
+            "at": [-30, -20, -40]
+          },
+          {
+            "id": "bush-1",
+            "ref": "3713.dat",
+            "colour": 71,
+            "at": [40, -20, -40]
+          },
+          {
+            "id": "bush-2",
+            "ref": "3713.dat",
+            "colour": 71,
+            "at": [-40, -20, -40]
+          }
+        ]
+      ]
+    }
+  ]
+}

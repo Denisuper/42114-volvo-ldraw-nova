@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "Grok — 42114 Volvo modular scene skeleton from official PDF",
+  "license": "Fan reconstruction for ldraw-nova workflow; LEGO is a trademark of the LEGO Group",
+  "includes": [
+    "modules/rear-gearbox-core.plan.json"
+  ],
+  "sections": [
+    {
+      "name": "volvo-42114-main.ldr",
+      "description": "Top-level scene: place bag-1 rear gearbox core; later modules attach at anchors (front chassis, articulation, dump bed). Coordinates: negative Y up, length along +X, width along +Z.",
+      "steps": [
+        [
+          {
+            "id": "rear-core",
+            "ref": "rear-gearbox-core.ldr",
+            "colour": 72,
+            "at": [0, 0, 0],
+            "purpose": "Bag 1 structural core from PDF pages 6–10; expand with gear steps 17–80 next"
+          }
+        ]
+      ]
+    }
+  ]
+}
